@@ -7,6 +7,4 @@ Author: Arian Barakat, Carles Sans, Rebin Hosini
 Maintainer: Arian Barakat <arianbarakat@gmail.com>
 Description: An R-package that implements the Euclidean and Dijkstra algorithms.
 License: GPL
-Suggests:
-    testthat
 RoxygenNote: 5.0.1
