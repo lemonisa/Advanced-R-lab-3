@@ -8,3 +8,4 @@ Maintainer: Arian Barakat <arianbarakat@gmail.com>
 Description: An R-package that implements the Euclidean and Dijkstra algorithms.
 License: GPL
 RoxygenNote: 5.0.1
+Suggests: testthat
