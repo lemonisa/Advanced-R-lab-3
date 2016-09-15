@@ -1,5 +1,8 @@
 library(kuloh)
 library(testthat)
+
+############################################################################################
+
 context("euclidian")
 
 test_that("The code gives correct output", {
@@ -9,12 +12,19 @@ test_that("The code gives correct output", {
   expect_that(euclidian(123612, 13892347912), equals(4))
   })
 
+############################################################################################
 
+context("euclidian error test")
 
+test_that("The code throws an error", {
+  expect_that(euclidian(c(1000,"a"),c("1000",1000)), throws_error("Insert a numeric value of lenght 1"))
+  expect_that(euclidian(TRUE,c("1000",1000)), throws_error("Insert a numeric value of lenght 1"))
+  expect_that(euclidian(5>2,FALSE), throws_error("Insert a numeric value of lenght 1"))
+  expect_that(euclidian(2,1:10), throws_error("Insert a numeric value of lenght 1"))
+  expect_that(euclidian(1,"hello"), throws_error("Insert a numeric value of lenght 1"))
+})
 
-
-
-
+############################################################################################
 
 context("dijkstra")
 
@@ -23,3 +33,4 @@ test_that("The code gives correct output", {
   expect_that(dijkstra(wiki_graph, 1), equals(c(9, 10, 0, 11, 11, 2)))
 })
 
+############################################################################################
