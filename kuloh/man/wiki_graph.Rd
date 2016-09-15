@@ -3,21 +3,23 @@
 \docType{data}
 \name{wiki_graph}
 \alias{wiki_graph}
-\title{A Dataset for the wiki_graph}
+\title{The wiki_graph dataset}
 \format{An object of class \code{data.frame} with 18 rows and 3 columns.}
 \source{
-http://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+\url{http://en.wikipedia.org/wiki/Dijkstras_algorithm}
 }
 \usage{
 wiki_graph
 }
 \description{
+The wiki_graph dataset
+
+
 The wiki_graph is a dataset that has 18 observation and 3 variables.
 The name of the variables are "v1","v2" and "w". These repesent the nodes
 and the weight of each node.
-}
-\details{
-The wiki_graph can be used with the dijkstra function.
+
+The wiki_graph can be used with the \code{\link{dijkstra}} function.
 }
 \keyword{datasets}
 

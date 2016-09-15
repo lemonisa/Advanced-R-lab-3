@@ -1,12 +1,12 @@
 #' Euclidean Algorithm
-#' 
+#'
 #' @description An algorithm to find the greatest common divisor of two numbers.
-#' 
-#' 
+#'
+#'
 #' @param a is numeric or integer of length 1
 #' @param b is numeric or integer of length 1
 #' @return The greatest commom divisor betwen a and b
-#' @references https://en.wikipedia.org/wiki/Euclidean_algorithm
+#' @references \url{https://en.wikipedia.org/wiki/Euclidean_algorithm}
 #' @export
 euclidian <- function(a, b) {
   if((!is.numeric(a) | length(a)!=1) | (!is.numeric(b) | length(b)!=1)){

@@ -18,6 +18,6 @@ The greatest commom divisor betwen a and b
 An algorithm to find the greatest common divisor of two numbers.
 }
 \references{
-https://en.wikipedia.org/wiki/Euclidean_algorithm
+\url{https://en.wikipedia.org/wiki/Euclidean_algorithm}
 }
 

@@ -1,4 +1,4 @@
-#' Dijkistra Algorithm
+#' @title Dijkstra Algorithm
 #'
 #' @description
 #' An algorithm to find the shortest path from a inital node to all other nodes.
@@ -7,6 +7,8 @@
 #' @param graph is a dataframe
 #' @param init_node is the initial node
 #' @return Shortest path from Initial Node
+#'
+#' @references \url{https://en.wikipedia.org/wiki/Dijkstras_algorithm}
 #'
 #' @export
 dijkstra <- function(graph, init_node){
