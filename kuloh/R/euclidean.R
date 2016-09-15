@@ -8,9 +8,9 @@
 #' @return The greatest commom divisor betwen a and b
 #' @references \url{https://en.wikipedia.org/wiki/Euclidean_algorithm}
 #' @export
-euclidian <- function(a, b) {
+euclidean <- function(a, b) {
   if((!is.numeric(a) | length(a)!=1) | (!is.numeric(b) | length(b)!=1)){
-    stop("Insert a numeric value of lenght 1")
+    stop("Insert a numeric value of length 1")
   } else {
     if(b > a){
       temp_a <-a
