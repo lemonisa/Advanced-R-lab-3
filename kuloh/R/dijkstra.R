@@ -12,7 +12,7 @@
 #'
 #' @export
 dijkstra <- function(graph, init_node){
-  if((!is.data.frame(graph) & dim(graph)[2]==3) | !is.numeric(init_node)) {
+  if((!is.data.frame(graph) || dim(graph)[2]!=3) | !is.numeric(init_node) | !(init_node %in% unique(unlist(wiki_graph[,1:2])))) {
     stop("Insert a correct dataframe or a numeric value as initial node")
   } else {
     # Initial setup
