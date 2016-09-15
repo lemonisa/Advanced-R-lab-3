@@ -7,9 +7,9 @@
 dijkstra(graph, init_node)
 }
 \arguments{
-\item{graph}{is a datafram}
+\item{graph}{is a dataframe}
 
-\item{init}{is the initial node}
+\item{init_node}{is the initial node}
 }
 \value{
 Shortest path from Initial Node
