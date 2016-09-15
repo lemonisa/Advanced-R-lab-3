@@ -17,9 +17,9 @@ test_that("The code gives correct output", {
 
 
 context("dijkstra")
-
+data(wiki_graph)
 test_that("The code gives correct output", {
   expect_that(dijkstra(wiki_graph, 1), equals(c(0, 7, 9, 20, 20, 11)))
-  expect_that(dijkstra(wiki_graph, 1), equals(c(9, 10, 0, 11, 11, 2)))
+  expect_that(dijkstra(wiki_graph, 3), equals(c(9, 10, 0, 11, 11, 2)))
 })
 
